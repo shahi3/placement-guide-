@@ -1,0 +1,129 @@
+/* 🌟 Outer Container for Alumni Stories */
+.alumni-container {
+    max-width: 85%;
+    margin: auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f9f9f9, #dfe9f3); /* ✅ Light gradient for elegance */
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔥 Title */
+h1 {
+    color: #222;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 🎯 Loading & Error Messages */
+.loading,
+.error {
+    font-size: 16px;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ✅ Stories Grid */
+.stories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+}
+
+/* 📌 Individual Story Card */
+.story-card {
+    max-width: 300px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+/* 🎨 Hover Effect */
+.story-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+    background: #e3f2fd; /* ✅ Light blue hover effect */
+}
+
+/* 🖼️ Image Styling */
+.story-image {
+    width: 80%; /* ✅ Smaller size */
+    max-height: 170px; /* ✅ Reduced height */
+    border-radius: 12px; /* ✅ Smooth corners */
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* ✅ Better shadow */
+}
+
+/* 📖 Story Details */
+.story-details {
+    padding: 12px;
+    width: 100%;
+}
+
+.story-details h2 {
+    color: #007bff;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* ✅ Text shadow for depth */
+}
+
+.story-details p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.7;
+    padding: 0 8px;
+}
+
+/* 📌 Animated Floating Effect */
+.story-card::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background: #007bff;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.story-card:hover::after {
+    width: 100%; /* ✅ Expand underline effect */
+}
+
+/* 🔳 Responsive Fixes */
+@media (max-width: 768px) {
+    .stories-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .story-card {
+        max-width: 90%;
+    }
+
+    .story-image {
+        width: 100%;
+        max-height: 140px; /* ✅ Even smaller on mobile */
+    }
+}

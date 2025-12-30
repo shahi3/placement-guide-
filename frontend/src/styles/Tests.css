@@ -1,0 +1,130 @@
+/* General Container Styles */
+.test-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.search-form {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.search-form input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.search-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #45a049;
+}
+
+/* Loading and Error Messages */
+.loading-message,
+.error-message,
+.no-tests-message {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #f44336;
+}
+
+/* Test List Styles */
+.test-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.test-card {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.test-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.test-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.test-card a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.test-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .test-details-container {
+        padding: 15px;
+    }
+
+    .search-form input {
+        max-width: 100%;
+    }
+
+    .search-form button {
+        width: 100%;
+    }
+
+    .test-card {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .test-card h2 {
+        font-size: 1.2rem;
+    }
+}

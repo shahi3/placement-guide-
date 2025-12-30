@@ -1,0 +1,77 @@
+.learning-materials-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.error-message, .loading-message {
+    font-size: 1.2rem;
+    color: #f44336;
+    margin: 15px 0;
+}
+
+.material-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.material-card {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.material-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.material-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.material-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.material-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .learning-materials-container {
+        padding: 15px;
+    }
+
+    .material-card {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .material-card h2 {
+        font-size: 1.2rem;
+    }
+}

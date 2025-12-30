@@ -1,0 +1,58 @@
+/* Container Styling */
+.profile-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #ffffff, #f2f2f2);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+/* Profile text */
+.profile-container p {
+    font-size: 1.1rem;
+    color: #222;
+    margin: 12px 0;
+    padding: 6px 12px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007bff;
+    border-radius: 6px;
+}
+
+/* Labels inside profile text */
+.profile-container p strong {
+    display: inline-block;
+    width: 160px;
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile-container p {
+        font-size: 1rem;
+    }
+
+    .profile-container p strong {
+        width: 120px;
+    }
+}

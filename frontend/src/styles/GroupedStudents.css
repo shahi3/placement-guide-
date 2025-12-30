@@ -1,0 +1,95 @@
+/* Overall Container Styling */
+.students-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Bright white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading Styling */
+  .students-container h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #333333; /* Dark gray for contrast */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  /* Loading and No Data Text */
+  .loading-text,
+  .no-data-text {
+    text-align: center;
+    font-size: 18px;
+    color: #555555; /* Medium gray for visibility */
+    font-style: italic;
+  }
+  
+  /* Table Styling */
+  .students-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .students-table thead {
+    background-color: #0056b3; /* Rich blue background for the header */
+    color: #ffffff; /* White text for better readability */
+  }
+  
+  .students-table thead th {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #004494; /* Slightly darker border */
+  }
+  
+  .students-table tbody tr {
+    transition: background-color 0.3s;
+  }
+  
+  .students-table tbody tr:nth-child(odd) {
+    background-color: #f7f9fc; /* Light gray for alternating rows */
+  }
+  
+  .students-table tbody tr:hover {
+    background-color: #e2eaf3; /* Subtle hover effect */
+  }
+  
+  .students-table tbody td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #333333; /* Dark gray for improved readability */
+  }
+  
+  /* Resume Link Styling */
+  .students-table tbody td a {
+    color: #0056b3; /* Rich blue for links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .students-table tbody td a:hover {
+    text-decoration: underline;
+    color: #003d80; /* Darker blue on hover */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .students-container {
+      padding: 10px;
+    }
+  
+    .students-table thead th,
+    .students-table tbody td {
+      font-size: 14px;
+    }
+  
+    .students-container h2 {
+      font-size: 20px;
+    }
+  }
+  

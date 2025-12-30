@@ -1,0 +1,47 @@
+/* General Sidebar Styles */
+.sidebar {
+  width: 220px;
+  background-color: #1f2833;
+  color: white;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-title {
+  color: #66fcf1;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 1.2rem;
+}
+
+.sidebar-links a {
+  color: #c5c6c7;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  display: block;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.sidebar-links a:hover {
+  background-color: #66fcf1;
+  color: #0b0c10;
+  font-weight: bold;
+}

@@ -1,0 +1,38 @@
+.filled-companies-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+.company-list {
+    list-style: none;
+    padding: 0;
+}
+
+.company-card {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.company-card h2 {
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.company-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
